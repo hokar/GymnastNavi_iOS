@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8F15F7841CBABD9300DE8A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7831CBABD9300DE8A45 /* AppDelegate.swift */; };
-		8F15F7861CBABD9300DE8A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7851CBABD9300DE8A45 /* ViewController.swift */; };
+		8F15F7861CBABD9300DE8A45 /* ClassSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7851CBABD9300DE8A45 /* ClassSelectViewController.swift */; };
 		8F15F7891CBABD9300DE8A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F7871CBABD9300DE8A45 /* Main.storyboard */; };
 		8F15F78B1CBABD9300DE8A45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F78A1CBABD9300DE8A45 /* Images.xcassets */; };
 		8F15F78E1CBABD9300DE8A45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F78C1CBABD9300DE8A45 /* LaunchScreen.xib */; };
 		8F15F79A1CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7991CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift */; };
+		8F15F7A41CBAC47E00DE8A45 /* ClassSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F7A31CBAC47E00DE8A45 /* ClassSelectCell.xib */; };
+		8F15F7A81CC2955600DE8A45 /* ClassSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7A71CC2955600DE8A45 /* ClassSelectCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		8F15F77E1CBABD9300DE8A45 /* GymnastNavi_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymnastNavi_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F15F7821CBABD9300DE8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F15F7831CBABD9300DE8A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F15F7851CBABD9300DE8A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F15F7851CBABD9300DE8A45 /* ClassSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSelectViewController.swift; sourceTree = "<group>"; };
 		8F15F7881CBABD9300DE8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F15F78A1CBABD9300DE8A45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8F15F78D1CBABD9300DE8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8F15F7931CBABD9300DE8A45 /* GymnastNavi_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymnastNavi_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F15F7981CBABD9300DE8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F15F7991CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymnastNavi_iOSTests.swift; sourceTree = "<group>"; };
+		8F15F7A31CBAC47E00DE8A45 /* ClassSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassSelectCell.xib; sourceTree = "<group>"; };
+		8F15F7A71CC2955600DE8A45 /* ClassSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,8 @@
 		8F15F7801CBABD9300DE8A45 /* GymnastNavi_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8F15F7A91CC2B47600DE8A45 /* ui */,
 				8F15F7831CBABD9300DE8A45 /* AppDelegate.swift */,
-				8F15F7851CBABD9300DE8A45 /* ViewController.swift */,
 				8F15F7871CBABD9300DE8A45 /* Main.storyboard */,
 				8F15F78A1CBABD9300DE8A45 /* Images.xcassets */,
 				8F15F78C1CBABD9300DE8A45 /* LaunchScreen.xib */,
@@ -110,6 +114,32 @@
 				8F15F7981CBABD9300DE8A45 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F15F7A91CC2B47600DE8A45 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8F15F7AB1CC2B4A100DE8A45 /* View */,
+				8F15F7AA1CC2B48600DE8A45 /* ViewControllers */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		8F15F7AA1CC2B48600DE8A45 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F15F7851CBABD9300DE8A45 /* ClassSelectViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8F15F7AB1CC2B4A100DE8A45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F15F7A71CC2955600DE8A45 /* ClassSelectCell.swift */,
+				8F15F7A31CBAC47E00DE8A45 /* ClassSelectCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +224,7 @@
 			files = (
 				8F15F7891CBABD9300DE8A45 /* Main.storyboard in Resources */,
 				8F15F78E1CBABD9300DE8A45 /* LaunchScreen.xib in Resources */,
+				8F15F7A41CBAC47E00DE8A45 /* ClassSelectCell.xib in Resources */,
 				8F15F78B1CBABD9300DE8A45 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F15F7861CBABD9300DE8A45 /* ViewController.swift in Sources */,
+				8F15F7861CBABD9300DE8A45 /* ClassSelectViewController.swift in Sources */,
 				8F15F7841CBABD9300DE8A45 /* AppDelegate.swift in Sources */,
+				8F15F7A81CC2955600DE8A45 /* ClassSelectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
