@@ -10,20 +10,25 @@ import UIKit
 
 @IBDesignable
 class ClassSelectCell : UIView {
-    // コードから初期化はここから
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var className: UILabel!
+    @IBOutlet weak var classDescription: UILabel!
+    
+    weak var delegate: ClassSelectCellDelegate! = nil
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        comminInit()
+        setup()
     }
     
-    // Storyboard/xib から初期化はここから
+    // これを実装しないとエラーになる
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        comminInit()
+        setup()
     }
     
-    // xibからカスタムViewを読み込んで準備する
-    private func comminInit() {
+    private func setup() {
         // ClassSelectCell生成
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "ClassSelectCell", bundle: bundle)
@@ -42,4 +47,18 @@ class ClassSelectCell : UIView {
             metrics:nil,
             views: bindings))
     }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+//        self.backgroundColor = UIColor.tappedHighLightColor()
+    }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+//        self.backgroundColor = UIColor.whiteColor()
+        
+        delegate?.tappedCell(self)
+    }
+}
+
+protocol ClassSelectCellDelegate: class {
+    func tappedCell(sender: ClassSelectCell)
 }

@@ -8,7 +8,7 @@
         <!--クラス選択-->
         <scene sceneID="xsu-Oo-hX3">
             <objects>
-                <viewController storyboardIdentifier="ClassSelect" id="SD8-T9-AGS" customClass="ClassSelectViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClassSelect" id="SD8-T9-AGS" customClass="ClassSelectViewController" customModule="GymnastNavi_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VCP-yc-7Vq"/>
                         <viewControllerLayoutGuide type="bottom" id="uMf-jf-ASa"/>
@@ -17,44 +17,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" restorationIdentifier="cellBeginner" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-ja-gsH" userLabel="CellBeginner" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="107" width="382" height="152"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-ja-gsH" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="112" width="382" height="152"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" button="YES"/>
-                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="nJz-YK-Wja"/>
+                                    <constraint firstAttribute="height" constant="152" id="7qN-cP-wVS"/>
+                                    <constraint firstAttribute="height" constant="152" id="QpW-De-aRB"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7qN-cP-wVS"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <view contentMode="scaleToFill" restorationIdentifier="cellProfesional" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-qm-Ev4" userLabel="CellProfesional" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-qm-Ev4" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
                                 <rect key="frame" x="16" y="292" width="382" height="152"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="3lb-5Z-lZ0"/>
+                                    <constraint firstAttribute="height" constant="152" id="ibX-WP-lXg"/>
+                                    <constraint firstAttribute="height" constant="152" id="izG-8m-iDS"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ibX-WP-lXg"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="1Sd-DQ-UGI"/>
-                            <constraint firstItem="uMf-jf-ASa" firstAttribute="top" secondItem="QG9-qm-Ev4" secondAttribute="bottom" constant="292" id="FPk-Eo-Byh"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="GZL-Rb-ef8"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="IrZ-cQ-Qb9"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="33" id="LQ9-Pv-51g"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="43" id="ay4-wf-ytq"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="centerY" secondItem="kwT-aF-Hk8" secondAttribute="centerY" id="vy0-tz-Ihx"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="z5t-Yy-ZAp"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="3OB-wy-Qti"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="rLn-ja-gsH" secondAttribute="trailing" id="AD8-OU-rHB"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="CEv-w1-1bQ"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="43" id="FEr-cf-hSN"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="28" id="FJb-Bk-nup"/>
+                            <constraint firstAttribute="centerY" secondItem="QG9-qm-Ev4" secondAttribute="centerY" constant="1" id="JZZ-QX-0rW"/>
+                            <constraint firstAttribute="centerY" secondItem="QG9-qm-Ev4" secondAttribute="centerY" constant="1" id="N21-yD-wW9"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="rLn-ja-gsH" secondAttribute="leading" id="O5O-BQ-TpD"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="28" id="SjX-MF-nEq"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="caE-k2-YPd"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="omD-IS-ev5"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" constant="4" id="p6w-U7-5CD"/>
+                            <constraint firstAttribute="centerY" secondItem="rLn-ja-gsH" secondAttribute="centerY" constant="1" id="pmI-77-Gfg"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="33" id="sVp-Bq-3TG"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="48" id="uI0-7y-PUh"/>
+                            <constraint firstItem="rLn-ja-gsH" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" constant="4" id="vRx-Wx-B8M"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="w0D-4R-2Ab"/>
+                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" constant="4" id="wXo-k7-1ea"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="vy0-tz-Ihx"/>
-                                <exclude reference="FPk-Eo-Byh"/>
+                                <exclude reference="FEr-cf-hSN"/>
+                                <exclude reference="p6w-U7-5CD"/>
+                                <exclude reference="pmI-77-Gfg"/>
+                                <exclude reference="vRx-Wx-B8M"/>
+                                <exclude reference="FJb-Bk-nup"/>
+                                <exclude reference="JZZ-QX-0rW"/>
+                                <exclude reference="N21-yD-wW9"/>
+                                <exclude reference="sVp-Bq-3TG"/>
+                                <exclude reference="w0D-4R-2Ab"/>
+                                <exclude reference="wXo-k7-1ea"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="クラス選択" id="ezM-mV-JQl"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="beginnerCell" destination="rLn-ja-gsH" id="UXq-dJ-AfX"/>
+                        <outlet property="professionalCell" destination="QG9-qm-Ev4" id="HjK-Vl-hDb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2UV-1t-IgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
