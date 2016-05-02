@@ -88,6 +88,7 @@ protocol ClassSelectCellDelegate: class {
 extension ClassSelectCell {
     func setClassType(type: ClassType, delegate: ClassSelectCellDelegate) {
         var clazz = type.classType()
+        self.delegate = delegate
         id = clazz.id
         className.text = clazz.className
         classDescription.text = clazz.classDescription
