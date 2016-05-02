@@ -15,18 +15,9 @@ class ClassSelectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         // セルの設定
-        // TODO:ClassSelectCell側にenumで定義する
-        beginnerCell.delegate = self
-        beginnerCell.className.text! = "初心者クラス"
-        beginnerCell.classDescription.text! = "幼児レベルから小学校の体育レベルの技を見ることができます。"
-//        beginnerCell.imageView = 
-        
-        professionalCell.delegate = self
-        professionalCell.className.text! = "体操競技レベル"
-        professionalCell.classDescription.text! = "体操競技レベルの技を見ることができます。"
-//        professionalCell.imageView = 
+        beginnerCell.setClassType(ClassSelectCell.ClassType.Biginner, delegate: self)
+        professionalCell.setClassType(ClassSelectCell.ClassType.Professional, delegate: self)
     }
 }
 

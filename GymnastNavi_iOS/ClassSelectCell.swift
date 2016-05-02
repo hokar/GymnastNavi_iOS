@@ -10,10 +10,32 @@ import UIKit
 
 @IBDesignable
 class ClassSelectCell : UIView {
+
+    struct Class {
+        var id: Int
+        var className: String
+        var classDescription: String
+    }
+
+    enum ClassType {
+        case Biginner
+        case Professional
+        
+        func classType() -> Class {
+            switch self {
+            case .Biginner:
+                return Class(id: 0, className: "初心者クラス", classDescription: "幼児レベルから小学校の体育レベルの技を見ることができます。")
+            case .Professional:
+                return Class(id: 1, className: "体操競技クラス", classDescription: "体操競技レベルの技を見ることができます。")
+            }
+        }
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var className: UILabel!
     @IBOutlet weak var classDescription: UILabel!
+    
+    var id: Int! = nil
     
     weak var delegate: ClassSelectCellDelegate! = nil
     
@@ -61,4 +83,14 @@ class ClassSelectCell : UIView {
 
 protocol ClassSelectCellDelegate: class {
     func tappedCell(sender: ClassSelectCell)
+}
+
+extension ClassSelectCell {
+    func setClassType(type: ClassType, delegate: ClassSelectCellDelegate) {
+        var clazz = type.classType()
+        id = clazz.id
+        className.text = clazz.className
+        classDescription.text = clazz.classDescription
+//        imageView.image = 
+    }
 }
