@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441EA1A1DFA8FDC1C9E66053 /* Pods_GymnastNavi_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEEFAF3A3F8983D29EF88DE /* Pods_GymnastNavi_iOSTests.framework */; };
 		8F15F7841CBABD9300DE8A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7831CBABD9300DE8A45 /* AppDelegate.swift */; };
 		8F15F7891CBABD9300DE8A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F7871CBABD9300DE8A45 /* Main.storyboard */; };
 		8F15F78B1CBABD9300DE8A45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F78A1CBABD9300DE8A45 /* Images.xcassets */; };
@@ -14,8 +15,10 @@
 		8F15F79A1CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7991CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift */; };
 		8F15F7A41CBAC47E00DE8A45 /* ClassSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F15F7A31CBAC47E00DE8A45 /* ClassSelectCell.xib */; };
 		8F15F7A81CC2955600DE8A45 /* ClassSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F15F7A71CC2955600DE8A45 /* ClassSelectCell.swift */; };
+		8F3A0C901CE8F1710084C11C /* GymnasticsNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A0C8F1CE8F1710084C11C /* GymnasticsNaviViewController.swift */; };
 		8FD52BB21CD3F9F100085745 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD52BB11CD3F9F100085745 /* UIColor.swift */; };
 		8FD52BB41CD4085800085745 /* ClassSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD52BB31CD4085800085745 /* ClassSelectViewController.swift */; };
+		C5E49F29D753663FF2D291E0 /* Pods_GymnastNavi_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059585E2DC67D3493E4364D7 /* Pods_GymnastNavi_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		059585E2DC67D3493E4364D7 /* Pods_GymnastNavi_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymnastNavi_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EEEFAF3A3F8983D29EF88DE /* Pods_GymnastNavi_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymnastNavi_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F85C9847DAEC708C2B60766 /* Pods-GymnastNavi_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymnastNavi_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymnastNavi_iOS/Pods-GymnastNavi_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8F15F77E1CBABD9300DE8A45 /* GymnastNavi_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymnastNavi_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F15F7821CBABD9300DE8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F15F7831CBABD9300DE8A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,8 +46,12 @@
 		8F15F7991CBABD9300DE8A45 /* GymnastNavi_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymnastNavi_iOSTests.swift; sourceTree = "<group>"; };
 		8F15F7A31CBAC47E00DE8A45 /* ClassSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassSelectCell.xib; sourceTree = "<group>"; };
 		8F15F7A71CC2955600DE8A45 /* ClassSelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectCell.swift; sourceTree = "<group>"; };
+		8F3A0C8F1CE8F1710084C11C /* GymnasticsNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymnasticsNaviViewController.swift; sourceTree = "<group>"; };
 		8FD52BB11CD3F9F100085745 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		8FD52BB31CD4085800085745 /* ClassSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectViewController.swift; sourceTree = "<group>"; };
+		E644D968E1A47F691A1ED479 /* Pods-GymnastNavi_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymnastNavi_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymnastNavi_iOSTests/Pods-GymnastNavi_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F65F4081DB2C26C7EC5318 /* Pods-GymnastNavi_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymnastNavi_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymnastNavi_iOS/Pods-GymnastNavi_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		FF7A15153C25608A49BD4D4B /* Pods-GymnastNavi_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymnastNavi_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymnastNavi_iOSTests/Pods-GymnastNavi_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E49F29D753663FF2D291E0 /* Pods_GymnastNavi_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441EA1A1DFA8FDC1C9E66053 /* Pods_GymnastNavi_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,8 @@
 				8F15F7801CBABD9300DE8A45 /* GymnastNavi_iOS */,
 				8F15F7961CBABD9300DE8A45 /* GymnastNavi_iOSTests */,
 				8F15F77F1CBABD9300DE8A45 /* Products */,
+				F066671D1E438065F9E1ABEA /* Pods */,
+				D100FE2FA1564DB3D47AC323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +136,7 @@
 		8F15F7A91CC2B47600DE8A45 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				8F3A0C8E1CE8F14D0084C11C /* Main */,
 				8F15F7AC1CCBF1F800DE8A45 /* ClassSelect */,
 			);
 			name = ui;
@@ -137,12 +152,40 @@
 			name = ClassSelect;
 			sourceTree = "<group>";
 		};
+		8F3A0C8E1CE8F14D0084C11C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8F3A0C8F1CE8F1710084C11C /* GymnasticsNaviViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		8FD52BB01CD3F9DF00085745 /* extension */ = {
 			isa = PBXGroup;
 			children = (
 				8FD52BB11CD3F9F100085745 /* UIColor.swift */,
 			);
 			name = extension;
+			sourceTree = "<group>";
+		};
+		D100FE2FA1564DB3D47AC323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				059585E2DC67D3493E4364D7 /* Pods_GymnastNavi_iOS.framework */,
+				4EEEFAF3A3F8983D29EF88DE /* Pods_GymnastNavi_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F066671D1E438065F9E1ABEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F85C9847DAEC708C2B60766 /* Pods-GymnastNavi_iOS.debug.xcconfig */,
+				F3F65F4081DB2C26C7EC5318 /* Pods-GymnastNavi_iOS.release.xcconfig */,
+				E644D968E1A47F691A1ED479 /* Pods-GymnastNavi_iOSTests.debug.xcconfig */,
+				FF7A15153C25608A49BD4D4B /* Pods-GymnastNavi_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F15F79D1CBABD9300DE8A45 /* Build configuration list for PBXNativeTarget "GymnastNavi_iOS" */;
 			buildPhases = (
+				90D0ABEFA97B8D88C0B35D97 /* 📦 Check Pods Manifest.lock */,
 				8F15F77A1CBABD9300DE8A45 /* Sources */,
 				8F15F77B1CBABD9300DE8A45 /* Frameworks */,
 				8F15F77C1CBABD9300DE8A45 /* Resources */,
+				E57FF790BC4CA1CEBB6944B5 /* 📦 Embed Pods Frameworks */,
+				5C9AE82AF45BA9E122919129 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F15F7A01CBABD9300DE8A45 /* Build configuration list for PBXNativeTarget "GymnastNavi_iOSTests" */;
 			buildPhases = (
+				B8B3D7BE33097D272DBCA975 /* 📦 Check Pods Manifest.lock */,
 				8F15F78F1CBABD9300DE8A45 /* Sources */,
 				8F15F7901CBABD9300DE8A45 /* Frameworks */,
 				8F15F7911CBABD9300DE8A45 /* Resources */,
+				9D3427771E43C6EA7EE4660B /* 📦 Embed Pods Frameworks */,
+				33AC39BC036541835DE25CE0 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,12 +290,106 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33AC39BC036541835DE25CE0 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymnastNavi_iOSTests/Pods-GymnastNavi_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C9AE82AF45BA9E122919129 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymnastNavi_iOS/Pods-GymnastNavi_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D0ABEFA97B8D88C0B35D97 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3427771E43C6EA7EE4660B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymnastNavi_iOSTests/Pods-GymnastNavi_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8B3D7BE33097D272DBCA975 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E57FF790BC4CA1CEBB6944B5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymnastNavi_iOS/Pods-GymnastNavi_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F15F77A1CBABD9300DE8A45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8FD52BB21CD3F9F100085745 /* UIColor.swift in Sources */,
+				8F3A0C901CE8F1710084C11C /* GymnasticsNaviViewController.swift in Sources */,
 				8F15F7841CBABD9300DE8A45 /* AppDelegate.swift in Sources */,
 				8F15F7A81CC2955600DE8A45 /* ClassSelectCell.swift in Sources */,
 				8FD52BB41CD4085800085745 /* ClassSelectViewController.swift in Sources */,
@@ -376,6 +519,7 @@
 		};
 		8F15F79E1CBABD9300DE8A45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F85C9847DAEC708C2B60766 /* Pods-GymnastNavi_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GymnastNavi_iOS/Info.plist;
@@ -386,6 +530,7 @@
 		};
 		8F15F79F1CBABD9300DE8A45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F65F4081DB2C26C7EC5318 /* Pods-GymnastNavi_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GymnastNavi_iOS/Info.plist;
@@ -396,6 +541,7 @@
 		};
 		8F15F7A11CBABD9300DE8A45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E644D968E1A47F691A1ED479 /* Pods-GymnastNavi_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -415,6 +561,7 @@
 		};
 		8F15F7A21CBABD9300DE8A45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF7A15153C25608A49BD4D4B /* Pods-GymnastNavi_iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
