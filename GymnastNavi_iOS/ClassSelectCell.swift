@@ -13,6 +13,7 @@ class ClassSelectCell : UIView {
 
     struct Class {
         var id: Int
+        var image: UIImage?
         var className: String
         var classDescription: String
     }
@@ -24,42 +25,36 @@ class ClassSelectCell : UIView {
         func classType() -> Class {
             switch self {
             case .Biginner:
-                return Class(id: 0, className: "初心者クラス", classDescription: "幼児レベルから小学校の体育レベルの技を見ることができます。")
+                return Class(id: 0, image: nil, className: "初心者クラス", classDescription: "幼児レベルから小学校の体育レベルの技を見ることができます。")
             case .Professional:
-                return Class(id: 1, className: "体操競技クラス", classDescription: "体操競技レベルの技を見ることができます。")
+                return Class(id: 1, image: nil, className: "体操競技クラス", classDescription: "体操競技レベルの技を見ることができます。")
             }
         }
     }
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var className: UILabel!
-    @IBOutlet weak var classDescription: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var className: UILabel!
+    @IBOutlet private weak var classDescription: UILabel!
     
     var id: Int! = nil
     
-    weak var delegate: ClassSelectCellDelegate! = nil
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         setup()
     }
     
-    // これを実装しないとエラーになる
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
+    private var view: UIView?
     
     private func setup() {
         // ClassSelectCell生成
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "ClassSelectCell", bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil).first as! UIView
-        addSubview(view)
+        view = nib.instantiateWithOwner(self, options: nil).first as? UIView
+        addSubview(view!)
         
         // サイズ調整
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
-        let bindings = ["view": view]
+        view!.setTranslatesAutoresizingMaskIntoConstraints(false)
+        let bindings = ["view": view!]
         addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[view]|",
             options:NSLayoutFormatOptions(rawValue: 0),
             metrics:nil,
@@ -71,27 +66,22 @@ class ClassSelectCell : UIView {
     }
     
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-//        self.backgroundColor = UIColor.tappedHighLightColor()
+        view!.backgroundColor = UIColor.tappedHighLightColor()
     }
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
-//        self.backgroundColor = UIColor.whiteColor()
+        view!.backgroundColor = UIColor.whiteColor()
         
-        delegate?.tappedCell(self)
     }
-}
-
-protocol ClassSelectCellDelegate: class {
-    func tappedCell(sender: ClassSelectCell)
 }
 
 extension ClassSelectCell {
-    func setClassType(type: ClassType, delegate: ClassSelectCellDelegate) {
+    func setClassType(type: ClassType, cellTapped: () -> Void) {
         var clazz = type.classType()
-        self.delegate = delegate
         id = clazz.id
         className.text = clazz.className
         classDescription.text = clazz.classDescription
-//        imageView.image = 
+        //        imageView.image = clazz.image
     }
 }
+

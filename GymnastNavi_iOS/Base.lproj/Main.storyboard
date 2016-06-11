@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EOY-nS-4Ou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EOY-nS-4Ou">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--クラス選択-->
@@ -14,77 +13,35 @@
                         <viewControllerLayoutGuide type="bottom" id="uMf-jf-ASa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kwT-aF-Hk8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-ja-gsH" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="112" width="382" height="152"/>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="288" placeholderIntrinsicHeight="136" translatesAutoresizingMaskIntoConstraints="NO" id="Ubp-Su-MqI" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="96" width="288" height="136"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="7qN-cP-wVS"/>
-                                    <constraint firstAttribute="height" constant="152" id="QpW-De-aRB"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7qN-cP-wVS"/>
-                                    </mask>
-                                </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-qm-Ev4" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
-                                <rect key="frame" x="16" y="292" width="382" height="152"/>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="288" placeholderIntrinsicHeight="136" translatesAutoresizingMaskIntoConstraints="NO" id="Quj-MF-bav" customClass="ClassSelectCell" customModule="GymnastNavi_iOS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="266" width="288" height="136"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="ibX-WP-lXg"/>
-                                    <constraint firstAttribute="height" constant="152" id="izG-8m-iDS"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ibX-WP-lXg"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="3OB-wy-Qti"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="rLn-ja-gsH" secondAttribute="trailing" id="AD8-OU-rHB"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="CEv-w1-1bQ"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="43" id="FEr-cf-hSN"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="28" id="FJb-Bk-nup"/>
-                            <constraint firstAttribute="centerY" secondItem="QG9-qm-Ev4" secondAttribute="centerY" constant="1" id="JZZ-QX-0rW"/>
-                            <constraint firstAttribute="centerY" secondItem="QG9-qm-Ev4" secondAttribute="centerY" constant="1" id="N21-yD-wW9"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="rLn-ja-gsH" secondAttribute="leading" id="O5O-BQ-TpD"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="28" id="SjX-MF-nEq"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" id="caE-k2-YPd"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="omD-IS-ev5"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" constant="4" id="p6w-U7-5CD"/>
-                            <constraint firstAttribute="centerY" secondItem="rLn-ja-gsH" secondAttribute="centerY" constant="1" id="pmI-77-Gfg"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="top" secondItem="rLn-ja-gsH" secondAttribute="bottom" constant="33" id="sVp-Bq-3TG"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="48" id="uI0-7y-PUh"/>
-                            <constraint firstItem="rLn-ja-gsH" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" constant="4" id="vRx-Wx-B8M"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="trailing" secondItem="kwT-aF-Hk8" secondAttribute="trailingMargin" id="w0D-4R-2Ab"/>
-                            <constraint firstItem="QG9-qm-Ev4" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leadingMargin" constant="4" id="wXo-k7-1ea"/>
+                            <constraint firstItem="Ubp-Su-MqI" firstAttribute="centerX" secondItem="Quj-MF-bav" secondAttribute="centerX" id="KGf-fs-xH2"/>
+                            <constraint firstItem="Ubp-Su-MqI" firstAttribute="height" secondItem="Quj-MF-bav" secondAttribute="height" id="Lah-T1-1Nn"/>
+                            <constraint firstAttribute="trailing" secondItem="Ubp-Su-MqI" secondAttribute="trailing" constant="16" id="ZDQ-fg-vKN"/>
+                            <constraint firstItem="Quj-MF-bav" firstAttribute="top" secondItem="Ubp-Su-MqI" secondAttribute="bottom" constant="34" id="aUS-Ud-oFi"/>
+                            <constraint firstItem="Ubp-Su-MqI" firstAttribute="top" secondItem="VCP-yc-7Vq" secondAttribute="bottom" constant="32" id="cJQ-dB-Wbi"/>
+                            <constraint firstItem="Quj-MF-bav" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leading" constant="16" id="ejv-Ta-BM0"/>
+                            <constraint firstAttribute="trailing" secondItem="Quj-MF-bav" secondAttribute="trailing" constant="16" id="nKq-Gy-flN"/>
+                            <constraint firstItem="Ubp-Su-MqI" firstAttribute="leading" secondItem="kwT-aF-Hk8" secondAttribute="leading" constant="16" id="wsE-ge-DSD"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="FEr-cf-hSN"/>
-                                <exclude reference="p6w-U7-5CD"/>
-                                <exclude reference="pmI-77-Gfg"/>
-                                <exclude reference="vRx-Wx-B8M"/>
-                                <exclude reference="FJb-Bk-nup"/>
-                                <exclude reference="JZZ-QX-0rW"/>
-                                <exclude reference="N21-yD-wW9"/>
-                                <exclude reference="sVp-Bq-3TG"/>
-                                <exclude reference="w0D-4R-2Ab"/>
-                                <exclude reference="wXo-k7-1ea"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="クラス選択" id="ezM-mV-JQl"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="beginnerCell" destination="rLn-ja-gsH" id="UXq-dJ-AfX"/>
-                        <outlet property="professionalCell" destination="QG9-qm-Ev4" id="HjK-Vl-hDb"/>
+                        <outlet property="beginnerCell" destination="Ubp-Su-MqI" id="LqR-Ok-3T9"/>
+                        <outlet property="professionalCell" destination="Quj-MF-bav" id="v1e-V2-IwB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2UV-1t-IgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,7 +52,7 @@
         <scene sceneID="hIu-8n-hu6">
             <objects>
                 <navigationController id="EOY-nS-4Ou" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="imY-b2-Bdr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

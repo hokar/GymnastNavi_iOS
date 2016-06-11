@@ -16,13 +16,18 @@ class ClassSelectViewController: UIViewController {
         super.viewDidLoad()
         
         // セルの設定
-        beginnerCell.setClassType(ClassSelectCell.ClassType.Biginner, delegate: self)
-        professionalCell.setClassType(ClassSelectCell.ClassType.Professional, delegate: self)
+        beginnerCell.setClassType(ClassSelectCell.ClassType.Biginner, cellTapped: { _ in
+            print("tapped beginner cell")
+        })
+        professionalCell.setClassType(ClassSelectCell.ClassType.Professional, cellTapped: { _ in
+            print("tapped professional cell")
+        })
     }
-}
-
-extension ClassSelectViewController: ClassSelectCellDelegate {
-    func tappedCell(sender: ClassSelectCell) {
-        NSLog("tappedCell")
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SkillList" {
+            let controller = segue.destinationViewController as! GymnasticsNaviViewController
+            controller.identifier = "てすと"
+        }
     }
 }
